@@ -1,8 +1,7 @@
 - name: demo on inventory variables
   hosts: frontend
   #connection: local
- 
- tasks:
+  tasks:
   - name: print information
     debug:
-      msg: "Username is: {{ username }}, password is: {{ password }}"
+      msg: "Hi, I am learning {{ COURSE }}, Trainer is {{ TRAINER }}, Duration is {{ DURATION }}, common_key: {{ common_key }}"
