@@ -3,7 +3,8 @@
   connection: local
   vars:
     topics: Linux, Shell, Ansible, Terraform
-- name: Convert string to a list
+  tasks:
+   - name: Convert string to a list
   debug:
-    msg: "Topics are: "{{ 'Topics' | split(',') }}"
+    msg: "Topics are: {{ 'Topics' | split(',') }}"
 
