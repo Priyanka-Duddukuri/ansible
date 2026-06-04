@@ -4,6 +4,7 @@
   vars:
     topics: Linux, Shell, Ansible, Terraform
     full_name: prudhvi and priyanka has kids juhith and harshika
+    ip_address: 100.89.76.56
     tagMap:
       name: Ansible
       project: roboshop
@@ -44,8 +45,12 @@
     debug:
       msg: "{{ full_name | upper }}"
 
-  - name: convert to uppercase
+  - name: convert to lowercase
     debug:
       msg: "{{ full_name | lower }}"
+
+  - name: check ipv4 address
+    debug:
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"
 
 
