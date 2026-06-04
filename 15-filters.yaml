@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: Linux, Shell, Ansible, Terraform
+    full_name: prudhvi and priyanka has kids juhith and harshika
     tagMap:
       name: Ansible
       project: roboshop
@@ -38,5 +39,9 @@
   - name: convert map to list
     debug:
       msg: "{{ tagsList | items2dict  }}"
+
+  - name: convert to uppercase
+    debug:
+      msg: "{{ full_name | upper }}"
 
 
