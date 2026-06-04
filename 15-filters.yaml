@@ -4,7 +4,7 @@
   vars:
     topics: Linux, Shell, Ansible, Terraform
   tasks:
-  - name: Convert string to a list
+  - name: Convert string to list
     debug:
-      msg: "Topics are: {{ 'topics' | split(',') }}"
+      msg: "Topics are: {{ topics | split(',') }}"
 
